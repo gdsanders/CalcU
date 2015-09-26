@@ -87,6 +87,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-mu-MTc">
                                 <rect key="frame" x="20" y="390" width="49" height="50"/>
                                 <state key="normal" image="Decimal"/>
+                                <connections>
+                                    <action selector="decimalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jal-PW-ApD"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C24-1U-4Xz" userLabel="Label">
                                 <rect key="frame" x="19" y="43" width="268" height="40"/>
@@ -98,6 +101,9 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="displayLabel" destination="C24-1U-4Xz" id="3NZ-AI-CPY"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

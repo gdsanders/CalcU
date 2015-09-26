@@ -9,6 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet weak var displayLabel: UILabel!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,6 +23,13 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    
+    @IBAction func decimalTapped(sender: UIButton) {
+        
+    }
+    
+    
 
 
 }
