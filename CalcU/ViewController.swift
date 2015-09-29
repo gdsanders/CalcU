@@ -24,7 +24,37 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    // Calculator button actions
+    
+    // Calculater operation IB actions
+    
+    
+    @IBAction func multiplyTapped(sender: UIButton) {
+    }
+    
+    @IBAction func divideTapped(sender: UIButton) {
+    }
+    
+    
+    @IBAction func minusTapped(sender: UIButton) {
+    }
+    
+    @IBAction func plusTapped(sender: UIButton) {
+    }
+    
+    
+    @IBAction func equalTapped(sender: UIButton) {
+    }
+    
+    @IBAction func plusMinusTapped(sender: UIButton) {
+    }
+    
+    @IBAction func backspaceTapped(sender: UIButton) {
+    }
+    
+    
+    
+    
+    // Calculator numerical IB actions
     
     
     @IBAction func decimalTapped(sender: UIButton) {

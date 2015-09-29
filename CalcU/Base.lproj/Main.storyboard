@@ -89,30 +89,51 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rqC-dC-0MF" userLabel="Back">
                                 <rect key="frame" x="165" y="390" width="49" height="50"/>
                                 <state key="normal" image="Back"/>
+                                <connections>
+                                    <action selector="backspaceTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T61-bb-u5b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsw-Du-smj" userLabel="Plus/Minus">
                                 <rect key="frame" x="165" y="105" width="49" height="50"/>
                                 <state key="normal" image="PlusMinus"/>
+                                <connections>
+                                    <action selector="plusMinusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YB4-c9-qeN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eoN-LZ-X5o" userLabel="Multiply">
                                 <rect key="frame" x="239" y="105" width="49" height="50"/>
                                 <state key="normal" image="Multiply"/>
+                                <connections>
+                                    <action selector="multiplyTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GBG-qf-pWp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rgf-1Q-Qqh" userLabel="Divide">
                                 <rect key="frame" x="238" y="176" width="49" height="50"/>
                                 <state key="normal" image="Divide"/>
+                                <connections>
+                                    <action selector="divideTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mHL-PM-pvv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Nh-m8-g0i" userLabel="Minus">
                                 <rect key="frame" x="238" y="249" width="49" height="50"/>
                                 <state key="normal" image="Minus"/>
+                                <connections>
+                                    <action selector="minusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BfD-At-7M0"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0JG-0P-aza" userLabel="Plus">
                                 <rect key="frame" x="238" y="321" width="49" height="50"/>
                                 <state key="normal" image="Plus"/>
+                                <connections>
+                                    <action selector="plusTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ukO-Wq-7g2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLX-1H-xMH">
                                 <rect key="frame" x="239" y="390" width="49" height="50"/>
                                 <state key="normal" image="Equal"/>
+                                <connections>
+                                    <action selector="equalTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="c0W-MH-cJQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gJc-mu-MTc">
                                 <rect key="frame" x="20" y="390" width="49" height="50"/>
