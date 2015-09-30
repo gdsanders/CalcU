@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var displayLabel: UILabel!
     
-    
+    var displayValue: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +58,10 @@ class ViewController: UIViewController {
     
     
     @IBAction func decimalTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue {
+            displayValue = currentValue + "."
+        }
         
     }
     
