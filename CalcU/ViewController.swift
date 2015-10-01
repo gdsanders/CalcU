@@ -72,9 +72,27 @@ class ViewController: UIViewController {
     
     @IBAction func zeroTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "0"
+        }
+        else {
+            displayValue = "0"
+        }
+        displayLabel.text = displayValue!
+
+        
     }
     
     @IBAction func oneTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue {
+            displayValue = currentValue + "1"
+        }
+        else {
+            displayValue = "1"
+        }
+        displayLabel.text = displayValue!
+
         
     }
     
