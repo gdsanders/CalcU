@@ -99,15 +99,45 @@ class ViewController: UIViewController {
     
     @IBAction func twoTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "2"
+        }
+        else {
+            displayValue = "2"
+        }
+        displayLabel.text = displayValue!
+        
+
+        
     }
     
     
     @IBAction func threeTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "3"
+        }
+        else {
+            displayValue = "3"
+        }
+        displayLabel.text = displayValue!
+        
+
+        
     }
     
     
     @IBAction func fourTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue {
+            displayValue = currentValue + "4"
+        }
+        else {
+            displayValue = "4"
+        }
+        displayLabel.text = displayValue!
+        
+
         
     }
     
