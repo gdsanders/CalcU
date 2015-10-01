@@ -144,24 +144,74 @@ class ViewController: UIViewController {
     
     @IBAction func fiveTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "5"
+        }
+        else {
+            displayValue = "5"
+        }
+        displayLabel.text = displayValue!
+        
+
+        
     }
     
     
     @IBAction func sixTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue {
+            displayValue = currentValue + "6"
+        }
+        else {
+            displayValue = "6"
+        }
+        displayLabel.text = displayValue!
+        
+
         
     }
     
     
     @IBAction func sevenTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "7"
+        }
+        else {
+            displayValue = "7"
+        }
+        displayLabel.text = displayValue!
+        
+
+        
     }
     
     
     @IBAction func eightTapped(sender: UIButton) {
         
+        if let currentValue = displayValue {
+            displayValue = currentValue + "8"
+        }
+        else {
+            displayValue = "8"
+        }
+        displayLabel.text = displayValue!
+        
+
+        
     }
     
     @IBAction func nineTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue {
+            displayValue = currentValue + "9"
+        }
+        else {
+            displayValue = "9"
+        }
+        displayLabel.text = displayValue!
+        
+
         
     }
     
