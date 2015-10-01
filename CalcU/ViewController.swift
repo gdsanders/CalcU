@@ -62,6 +62,10 @@ class ViewController: UIViewController {
         if let currentValue = displayValue {
             displayValue = currentValue + "."
         }
+        else {
+            displayValue = "."
+        }
+        displayLabel.text = displayValue!
         
     }
     
