@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         
         if doubleValueFromDisplayValue == nil {
             print("Reset the number because we couldn't convert the current value into a Double")
+            displayValue = nil
+            displayLabel.text = "0"
         }
     }
     
