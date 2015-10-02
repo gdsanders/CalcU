@@ -29,6 +29,16 @@ class ViewController: UIViewController {
     
     
     @IBAction func multiplyTapped(sender: UIButton) {
+        
+        var doubleValueFromDisplayValue: Double?
+        
+        if let currentValue = displayValue, doubleFromCurrentValue = Double(currentValue) {
+                doubleValueFromDisplayValue = doubleFromCurrentValue
+        }
+        
+        if doubleValueFromDisplayValue == nil {
+            print("Reset the number because we couldn't convert the current value into a Double")
+        }
     }
     
     @IBAction func divideTapped(sender: UIButton) {
