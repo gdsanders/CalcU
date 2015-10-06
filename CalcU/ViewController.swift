@@ -71,6 +71,43 @@ class ViewController: UIViewController {
     }
     
     @IBAction func divideTapped(sender: UIButton) {
+        
+        var doubleValueFromDisplayValue: Double?
+        
+        if let currentValue = displayValue, doubleFromCurrentValue = Double(currentValue) {
+            doubleValueFromDisplayValue = doubleFromCurrentValue
+        }
+        
+        if doubleValueFromDisplayValue == nil {
+            print("Reset the number because we couldn't convert the current value into a Double")
+            displayValue = nil
+            displayLabel.text = "0"
+        }
+        else if operand == nil {
+            operand = doubleValueFromDisplayValue
+            operation = "/"
+            displayValue = nil
+        }
+        else if operand != nil {
+            if operation == "+" {
+                operand = operand! + doubleValueFromDisplayValue!
+            }
+            else if operation == "-" {
+                operand = operand! - doubleValueFromDisplayValue!
+            }
+            else if operation == "*" {
+                operand = operand! * doubleValueFromDisplayValue!
+            }
+            else if operation == "/" {
+                operand = operand! / doubleValueFromDisplayValue!
+            }
+            operation = "/"
+            displayValue = nil
+            displayLabel.text = "\(operand!)"
+        }
+
+        
+        
     }
     
     
