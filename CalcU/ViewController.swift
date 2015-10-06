@@ -207,8 +207,15 @@ class ViewController: UIViewController {
             else if operation == "/" {
                 operand = operand! / doubleFromCurrentValue
             }
+            
+            displayLabel.text = "\(operand!)"
+            operation = nil
 
             
+        }
+        else {
+            displayValue = nil
+            displayLabel.text = "0"
         }
         
         
