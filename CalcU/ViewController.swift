@@ -45,6 +45,29 @@ class ViewController: UIViewController {
             displayValue = nil
             displayLabel.text = "0"
         }
+        else if operand == nil {
+            operand = doubleValueFromDisplayValue
+            operation = "*"
+            displayValue = nil
+        }
+        else if operand != nil {
+            if operation == "+" {
+                operand = operand! + doubleValueFromDisplayValue!
+            }
+            else if operation == "-" {
+                operand = operand! - doubleValueFromDisplayValue!
+            }
+            else if operation == "*" {
+                operand = operand! * doubleValueFromDisplayValue!
+            }
+            else if operation == "/" {
+                operand = operand! / doubleValueFromDisplayValue!
+            }
+            operation = "*"
+            displayValue = nil
+            displayLabel.text = "\(operand!)"
+        }
+        
     }
     
     @IBAction func divideTapped(sender: UIButton) {
