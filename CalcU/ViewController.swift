@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var displayLabel: UILabel!
     
     var displayValue: String?
+    
+    var operand: Double?
+    
+    var operation: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
