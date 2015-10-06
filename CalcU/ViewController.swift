@@ -193,6 +193,25 @@ class ViewController: UIViewController {
     
     
     @IBAction func equalTapped(sender: UIButton) {
+        
+        if let currentValue = displayValue, doubleFromCurrentValue = Double(currentValue) {
+            if operation == "+" {
+                operand = operand! + doubleFromCurrentValue
+            }
+            else if operation == "-" {
+                operand = operand! - doubleFromCurrentValue
+            }
+            else if operation == "*" {
+                operand = operand! * doubleFromCurrentValue
+            }
+            else if operation == "/" {
+                operand = operand! / doubleFromCurrentValue
+            }
+
+            
+        }
+        
+        
     }
     
     @IBAction func plusMinusTapped(sender: UIButton) {
